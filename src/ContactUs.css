@@ -1,0 +1,133 @@
+/* Main layout styles */
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #fa63bb;
+}
+
+/* Contact info section styles */
+.contact-info-section {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contact-info-section h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.contact-info-section p {
+  margin-bottom: 32px;
+  color: #171b20;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Form card styles */
+.form-card {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 500px;
+}
+
+/* Form styles */
+.contact-form {
+  padding: 48px;
+}
+
+.contact-form p {
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.contact-method-options {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.radio-option input {
+  margin: 0;
+  width: auto;
+}
+
+.radio-option span {
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #94a3b8;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: #5784e4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #1d74d8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+  
+  .contact-info-section,
+  .contact-form {
+    padding: 32px;
+  }
+}
